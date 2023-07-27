@@ -38,7 +38,7 @@ const ProductDAO = {
   },
   async selectTopHot(top) {
     const items = await Models.Order.aggregate([
-      { $match: { status: 'APPROVED' } },
+      { $match: { status: 'CHẤP NHẬN' } },
       { $unwind: '$items' },
       { $group: { _id: '$items.product._id', sum: { $sum: '$items.quantity' } } },
       { $sort: { sum: -1 } }, // descending
