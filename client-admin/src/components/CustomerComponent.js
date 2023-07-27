@@ -88,7 +88,7 @@ class Customer extends Component {
                   <th>Mã ID</th>
                   <th>Ngày Tạo</th>
                   <th>Tên Khách Hàng</th>
-                  <th>Số Điện Thoạie</th>
+                  <th>Số Điện Thoại</th>
                   <th>Tổng Cộng</th>
                   <th>Trạng Thái</th>
                 </tr>
